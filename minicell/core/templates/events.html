@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} | Events{% endblock %}
+{% block page_title %}Events{% endblock %}
+
+{% block content %}
+<div>
+  <h2>Whole-cell modeling summer school<span class="details">, April 3-8, 2016 @ CRG, Barcelona ES</span>
+    <a class="details" href="http://www.wholecell.org/school-2016.html"><i class="fi-link"></i></a>
+  </h2>
+  
+  <p>The summer school will teach students how to build whole-cell models through didactic lectures and hands-on active learning exercises on biological pathways, dynamical modeling, hybrid modeling, and strategies for managing model complexity. Students will learn about key intracellular pathways, methods for modeling biological pathways, and the latest methods for constructing models which represent multiple pathways.</p>
+  
+  <h3>Schedule</h3>
+  <p>The course will be five days long. Each morning will include 2 lectures that will introduce students to biological concepts in metabolism, cellular signaling, and cell cycle regulation, as well as computational concepts in logical, constraint-based, ordinary differential equation, and hybrid modeling. Each afternoon will feature 2 tutorials which will provide students hands-on instruction in model building, model composition, and simulation. The course will also provide students opportunities to present their research, as well as network with the other students and faculty.</p>
+  
+  <h3>How to apply</h3> 
+  <p>The summer school will be open to graduate students and postdoctoral scholars. An online application will be available on the <a href="http://www.wholecell.org/school-2016.html">course website</a> in Fall 2015.</p>
+   
+  <h3>More information</h3>
+  <p>Please visit the <a href="http://www.wholecell.org/school-2016.html">course website</a> for more information.</p>
+</div>
+
+<div>
+  <h2>Synthetic biology symposium<span class="details">, 2017 @ Bordeaux FR</span></h2>
+  
+  <p>We plan to organize a workshop on model-driven approaches to bioengineering. The workshop will facilitate discussion on using computational models to guide genome design, construction, and execution. Specifically, the workshop will focus on model-driven approaches to building minimal cells including approaches which start from species with both small and large genomes. The workshop will feature talks from renowned scientists, as well as practical tutorials and open discussions. The workshop will be open to the scientific community.</p>
+  
+  <h3>Date and location</h3>
+  <p>The workshop will be held in 2017 in Bordeaux, France.</p>
+  
+  <h3>More information</h3>
+  <p>Please check back in 2016 for more information.</p>
+</div>
+{% endblock %}

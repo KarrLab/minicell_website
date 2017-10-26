@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} | People{% endblock %}
+{% block page_title %}People{% endblock %}
+
+{% block content %}
+
+<div id="people">
+  <div class="group">
+    <h2>Center for Regulatory Genomics<span class="details">, Barcelona ES</span>
+      <a class="details" href="http://sb.crg.es/serrano_lab"><i class="fi-link"></i></a>
+    </h2>
+    <div class="info">The Serrano Lab has extensive expertise in Mycoplasma genomics. They have characterized the <i>Mycoplasma pneumoniae</i> methylome (Lluch-Senar et al., 2013), transcriptome (G&uuml;ell et al., 2009; Yus et al., 2012), and proteome (K&uuml;hner et al., 2009; Maier et al., 2011; Van Noort et al., 2012).</div>
+    <ul class="small-block-grid-2 medium-block-grid-3">
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/serrano.thumb.png" alt="Luis Serrano" width="100%">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Luis Serrano</b> <a href="mailto:luis.serrano@crg.eu"><i class="fi-mail"></i></a> 
+            <br/><i>Group Leader and Director</i>          
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/senar.thumb.png" alt="Maria Lluch-Senar">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Maria Lluch-Senar</b> <a href="mailto:maria.lluch@crg.eu"><i class="fi-mail"></i></a>
+            <br/><i>Staff Scientist</i>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/llorens.thumb.png" alt="Veronica LLorens-Rico">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Veronica Llor&eacute;ns-Rico</b> <a href="mailto:veronica.llorens@crg.eu"><i class="fi-mail"></i></a>
+            <br/><i>PhD Student</i>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/missing-photo.png" alt="Marc Weber">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Marc Weber</b> <a href="mailto:marc.weber@crg.eu"><i class="fi-mail"></i></a>
+            <br/><i>Postdoctoral Scholar</i>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <h2>University of G&ouml;ttingen<span class="details">, G&ouml;ttingen DE</span>
+        <a class="details" href="http://genmibio.uni-goettingen.de/"><i class="fi-link"></i></a>
+    </h2>
+    <div class="info">The St&uuml;lke Lab has expertise in <i>Mycoplasma pneumoniae</i> metabolism and its role in virulence (Halbedel et al., 2006; Halbedel et al., 2007; Hames et al., 2009; Schmidl et al., 2010; Schmidl et al., 2011; Van Noort et al., 2012; Gro&szlig;hennig et al., 2013; Lluch-Senar et al., 2015).</div>
+    <ul class="small-block-grid-2 medium-block-grid-3">
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/stulke.thumb.png" alt="Jorg Stulke">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">J&ouml;rg St&uuml;lke</b> <a href="mailto:jstuelk@gwdg.de"><i class="fi-mail"></i></a>
+            <br/><i>Professor</i>          
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+    
+  <div class="group">
+    <h2>Icahn School of Medicine at Mount Sinai<span class="details">, New York US</span>
+    <a class="details" href="http://www.karrlab.org"><i class="fi-link"></i></a>
+    </h2>
+    <div class="info">The Karr Lab has extensive expertise in whole-cell modeling. Recently, they developed the first whole-cell model of <i>Mycoplasma genitalium</i> (Karr et al., 2012). They have also developed several software tools for whole-cell modeling (Karr et al., 2013; Karr et al., 2014; Lee et al., 2013). They have used whole-cell modeling to analyze the metabolic costs of synthetic gene networks (Purcell et al., 2013).</div>
+    <ul class="small-block-grid-2 medium-block-grid-3">
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/karr.thumb.png" alt="Jonathan Karr">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Jonathan Karr</b> <a href="mailto:karr@mssm.edu"><i class="fi-mail"></i></a>
+            <br/><i>Fellow</i>          
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <h2>National Institute for Agricultural Research<span class="details">, Bordeaux FR</span>
+      <a class="details" href="https://www6.bordeaux-aquitaine.inra.fr/bfp_eng/Research/Team-Mollicutes"><i class="fi-link"></i></a>
+    </h2>
+    <div class="info">The Blanchard Lab has extensive expertise in Mycoplasma genome construction and transplantation. Recently, they developed new methods for in-yeast genome editing (Benders et al., 2010; Chandran et al., 2014) and genome transplantation (Lartigue et al., 2007;  Lartigue et al., 2009).</div>
+    <ul class="small-block-grid-2 medium-block-grid-3">
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/blanchard.thumb.png" alt="Alain Blanchard">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Alain Blanchard</b> <a href="mailto:ablancha@bordeaux.inra.fr"><i class="fi-mail"></i></a>
+            <br/><i>Professor</i>          
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/lartigue.thumb.png" alt="Carole Lartigue">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Carole Lartigue</b> <a href="mailto:clartigu@bordeaux.inra.fr"><i class="fi-mail"></i></a>
+            <br/><i>Staff Scientist</i>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/missing-photo.png" alt="Pascal Sirand">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Pascal Sirand</b> <a href="mailto:sirand@bordeaux.inra.fr"><i class="fi-mail"></i></a>
+            <br/><i>Associate Professor</i>            
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/arfi.thumb.png" alt="Yonathan Arfi">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Yonathan Arfi</b> <a href="mailto:yonathan.arfi@u-bordeaux.fr"><i class="fi-mail"></i></a>
+            <br/><i>Associate Professor</i>
+          </div>
+        </div>
+      </li>  
+    </ul>
+  </div>
+  
+  <div class="group">
+    <h2>Stanford University<span class="details">, Stanford US</span>
+    <a class="details" href="http://covert.stanford.edu"><i class="fi-link"></i></a>
+    </h2>
+    <div class="info">The Covert Lab has extensive expertise in whole-cell modeling. Recently, they developed the first whole-cell model of <i>Mycoplasma genitalium</i> (Karr et al., 2012). They have also developed several software tools for whole-cell modeling (Karr et al., 2013; Karr et al., 2014; Lee et al., 2013). They have used whole-cell modeling to analyze the metabolic costs of synthetic gene networks (Purcell et al., 2013).</div>
+    <ul class="small-block-grid-2 medium-block-grid-3">
+      <li>
+        <div class="row small-collapse">
+          <div class="columns small-4">
+            <img src="{% get_static_prefix %}/img/photos/covert.thumb.png" alt="Markus Covert">
+          </div>
+          <div class="columns small-8">
+            <b class="emph">Markus Covert</b> <a href="mailto:mcovert@stanford.edu"><i class="fi-mail"></i></a>
+            <br/><i>Associate Professor</i>          
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

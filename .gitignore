@@ -1,0 +1,10 @@
+# compiled files
+*.pyc
+**/__pycache__/
+
+# log
+minicell/log/
+
+#temporary files
+tmp/
+

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} | Education{% endblock %}
+{% block page_title %}Education{% endblock %}
+
+{% block content %}
+<div>
+  <h2>Whole-cell modeling summer school<span class="details">, April 3-8, 2016 @ CRG, Barcelona ES</span>
+    <a class="details" href="http://www.wholecell.org/school-2016.html"><i class="fi-link"></i></a>
+  </h2>
+  
+  <p>The summer school will teach students how to build whole-cell models through didactic lectures and hands-on active learning exercises on biological pathways, dynamical modeling, hybrid modeling, and strategies for managing model complexity. Students will learn about key intracellular pathways, methods for modeling biological pathways, and the latest methods for constructing models which represent multiple pathways.</p>
+  
+  <h3>Schedule</h3>
+  <p>The course will be five days long. Each morning will include 2 lectures that will introduce students to biological concepts in metabolism, cellular signaling, and cell cycle regulation, as well as computational concepts in logical, constraint-based, ordinary differential equation, and hybrid modeling. Each afternoon will feature 2 tutorials which will provide students hands-on instruction in model building, model composition, and simulation. The course will also provide students opportunities to present their research, as well as network with the other students and faculty.</p>
+  
+  <h3>How to apply</h3> 
+  <p>The summer school will be open to graduate students and postdoctoral scholars. An online application will be available on the <a href="http://www.wholecell.org/school-2016.html">course website</a> in Fall 2015.</p>
+   
+  <h3>More information</h3>
+  <p>Please visit the <a href="http://www.wholecell.org/school-2016.html">course website</a> for more information.</p>
+</div>
+
+<div>
+  <h2>Graduate and postdoctoral training</h2>
+  <p>The Minicell project will provide hands-on graduate and postdoctoral training in genomics, whole-cell modeling, and genome engineering. Our trainees will also receive professional training in oral and written communication, as well as career counseling.</p>
+  
+  <p class="nobottomsep">Please contact the individual partner laboratories for more information and to apply:</p>
+  <ul class="notopsep">
+    <li>Experimental genomics @ Center for Regulatory Genomics, Barcelona ES: Luis Serrano <a href="mailto:luis.serrano@crg.eu"><i class="fi-mail"></i></a></li>
+    <li>Genome engineering @ National Institute for Agricultural Research, Bordeaux FR: Alain Blanchard <a href="mailto:ablancha@bordeaux.inra.fr"><i class="fi-mail"></i></a></li>
+    <li>Microbial pathogenesis @ University of G&ouml;ttingen, G&ouml;ttingen DE: J&ouml;rg St&uuml;lke <a href="mailto:jstuelk@gwdg.de"><i class="fi-mail"></i></a></li>
+    <li>Whole-cell modeling @ Mount Sinai School of Medicine, New York US: Jonathan Karr <a href="http://www.karrlab.org/join/"><i class="fi-link"></i></a></li>
+  </ul>
+</div>
+
+<div>
+  <h2>Laboratory exchanges</h2>
+  <p>Our graduate and postdoctoral trainees will also have opportunities for training outside their primary field through exchanges with the other partner laboratories. Trainees will be encouraged to do at least one two-week exchange. The exchanges will enable students to learn additional skills, network with other scientists, and share knowledge from their primary lab.</p>
+</div>
+{% endblock %}

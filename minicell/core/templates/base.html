@@ -1,0 +1,116 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      	<meta name="description" content="Minicell: A model-driven approach to minimal cell engineering for medical therapy." />
+      	<meta name="keywords" content="systems biology, synthetic biology, minimal cell, whole-cell, modeling, genome engineering" />
+      	<meta name="author" content="Minicell Consortium" />
+      	<meta name="revised" content="Minicell Consortium, {{ last_updated_date }}" />
+      	<meta name="copyright" content="&copy; 2015 Minicell Consortium" />
+      	<meta name="robots" content="ALL" />
+      	<meta http-equiv="content-language" content="en-US" />
+      	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>{% block head_title %}Minicell{% endblock %}</title>
+
+        <link rel="stylesheet" href="{% get_static_prefix %}/css/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="{% get_static_prefix %}/css/owl-carousel/owl.theme.css" />
+
+        <link rel="stylesheet" href="{% get_static_prefix %}/css/foundation.css" />
+        <link rel="stylesheet" href="{% get_static_prefix %}/css/foundation-icons.css" />
+        <link rel="stylesheet" href="{% get_static_prefix %}/css/extras.css" />
+
+        <script src="{% get_static_prefix %}/js/vendor/modernizr.js"></script>
+        <script src="{% get_static_prefix %}/js/vendor/jquery.js"></script>
+        <script src="{% get_static_prefix %}/js/foundation.min.js"></script>
+
+        <link rel="icon" type="image/png" href="{% get_static_prefix %}/img/logo-v2.png" />
+    </head>
+    <body>
+        <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+                <nav class="tab-bar hide-for-medium-up">
+                   <section class="left-small">
+                        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                    </section>
+
+                    <section class="right tab-bar-section">
+                        <h1 class="title">Minicell</h1>
+                    </section>
+                </nav>
+
+                <aside class="left-off-canvas-menu">
+                    <ul class="off-canvas-list">
+                        <li><label>Minicell</label></li>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'research' %}">Research</a></li>
+                        <li><a href="{% url 'education' %}">Education</a></li>
+                        <li><a href="{% url 'resources' %}">Resources</a></li>
+                        <li><a href="{% url 'events' %}">Events</a></li>
+                        <li><a href="{% url 'publications' %}">Publications</a></li>
+                        <li><a href="{% url 'people' %}">People</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </aside>
+
+                <section class="main-section">
+                <!-- canvas wrapping -->
+
+                    <div class="row container">
+
+                    <!-- top bar -->
+                    <div class="header show-for-medium-up">
+                        <div class="banner">
+                          <img class="logo" src="{% get_static_prefix %}/img/banner-v2.png" />
+                        </div>
+
+                        <ul class="nav">
+                            <li{% if request.path == "/" %} class="active"{% endif %}><a href="{% url 'index' %}">Home</a></li>
+                            <li{% if request.path == "/research" or request.path == "/research/" %} class="active"{% endif %}><a href="{% url 'research' %}">Research</a></li>
+                            <li{% if request.path == "/education" or request.path == "/education/" %} class="active"{% endif %}><a href="{% url 'education' %}">Education</a></li>
+                            <li{% if request.path == "/resources" or request.path == "/resources/" %} class="active"{% endif %}><a href="{% url 'resources' %}">Resources</a></li>
+                            <li{% if request.path == "/events" or request.path == "/events/" %} class="active"{% endif %}><a href="{% url 'events' %}">Events</a></li>
+                            <li{% if request.path == "/publications" or request.path == "/publications/" %} class="active"{% endif %}><a href="{% url 'publications' %}">Publications</a></li>
+                            <li{% if request.path == "/people" or request.path == "/people/" %} class="active"{% endif %}><a href="{% url 'people' %}">People</a></li>
+                            <li{% if request.path == "/contact" or request.path == "/contact/" %} class="active"{% endif %}><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="subheader">
+                    {% block subheader %}{% endblock %}
+                    </div>
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="centered">
+                        <!-- end common header -->
+
+                        <h1>{% block page_title %}{% endblock %}</h1>
+                        {% block content %}{% endblock %}
+
+                        <!-- common footer -->
+                        </div>
+                    </div>
+
+                    <!-- bottom bar -->
+                    <div class="bottom-bar">
+                        &copy; Minicell Consortium 2015. Last updated {{ last_updated_date }}.
+                    </div>
+
+                  </div>
+
+                <!-- canvas wrapping -->
+                </section>
+                <a class="exit-off-canvas"></a>
+            </div>
+        </div>
+
+        <script>
+        $(document).foundation();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} | Research{% endblock %}
+{% block page_title %}Research{% endblock %}
+
+{% block content %}
+<div>
+  <h2>Introduction</h2>
+  <p>Synthetic biology promises to enable engineers to rationally construct biological machines for vital medical and industrial functions such as fuel and commodity chemical production, biosensing, and waste decontamination. One exciting application are bacteria which can target medication to diseased tissue. Such bacteria could deliver drugs to inaccessible compartments, localize therapy to minimize adverse effects, and provide long-lasting delivery to maintain stable drug concentrations.</p> 
+
+  <h3>Bottlenecks to synthetic biology</h3>
+  <p>There are numerous bottlenecks to synthetic biology. Our biological parts are not modular or well-characterized. We also have not completely characterized and cannot control many of the environments, such as the human body, where we would like to deploy cells. Consequently, we cannot easily predict the combined behavior of multiple parts. Furthermore, we have limited tools for synthesizing and editing DNA, synthesizing cells, and transplanting DNA. Mathematical models which can predict behavior from genotype, computational tools which can optimize genomes, and chemical tools for synthesizing and executing genomes are needed to enable rational bioengineering.</p>
+
+  <h3>Minimal cell approach to synthetic biology</h3>
+  <p>One way to reduce the challenge and complexity of synthetic biology is to start from species with small genomes. This minimizes the number of components that must be characterized to completely understand and predictably engineer a cell. This also minimizes the challenges of genome synthesis, cellular environment synthesis, and genome transplantation.</p> 
+
+  <h3>Mycoplasma-based synthetic biology chassis</h3>
+The gram-positive bacterium <i>Mycoplasma pneumoniae</i> is the ideal starting point for synthetic biology. It has a small (860 kb) and comprehensively annotated genome containing just 718 protein-coding genes. It is also just 70 aL and has minimal internal organization. In addition, there is a rich collection of functional genomic data describing its methylome, transcriptome, proteome, and metabolome. A flux balance analysis (FBA) model describing its metabolism is also available. In addition, it is closely related to <i>Mycoplasma genitalium</i> and <i>Mycoplasma mycoides</i> whose genomes have been chemically synthesized, transplanted, and comprehensively modeled.
+
+  <h3>Mycoplasma-based lung therapy delivery</h3>
+  <p>In particular, <i>M. pneumoniae</i> is well-suited for a lung cancer drug delivery system. It naturally localizes to the human lung, is a weak pathogen, and is sensitive to common antibiotics. A <i>M. pneumoniae</i>-based drug delivery system could be constructed by removing its virulence factors and adding drug synthesis and secretion pathways. This requires new experiments to characterize its virulence factors, improved computational models to optimize its genome, and improved genome editing and transplantation methods to engineer its genome.</p>
+  
+  <h3>Project goals</h3>
+  <p class="nobottomsep">Our long-term goal is to construct a bacterial drug delivery system. Toward this goal, this project will develop improved computational and chemical tools for reliably designing, synthesizing, and executing genomes, and use these tools to construct a predictable, efficient cellular chassis for future engineering such as drug delivery. As illustrated below, we have five specific aims:</p>
+  <ul class="notopsep">
+    <li>Extensively characterize the individual molecular components of <i>M. pneumoniae</i>,</li>
+    <li>Develop a whole-cell model of <i>M. pneumoniae</i> with expanded scope and improved accuracy,</li>
+    <li>Use the model to design a non-pathogenic strain that could be a chassis for future engineering,</li>
+    <li>Use in-yeast genome editing and transplantation to construct this optimized strain, and</li>
+    <li>Characterize the growth and virulence of the optimized stain and use this data to refine the model.</li>
+  </ul>
+
+  <div class="figure">
+    <img src="{% get_static_prefix %}/img/figures/Subprojects-v3.png" width="35%" />
+    <p class="caption"><b>Minicell project overview.</b> The CRG and UGOE will use several genomics technologies to characterize <i>M. pneumoniae</i>. Mt Sinai will use this data, as well as public data to construct a whole-cell model. Mt Sinai will also maximize the model's predicted behavior by optimizing its parameters to design improved genomes. INRA will use genome editing and transplantation to construct and execute these designer genomes, and our CRG and UGOE partners will test the new strains. We will use the additional data from these tests to refine our model. We will iterate this design-construct-test process until we have constructed a fast-growing, non-virulent, drug-producing strain. All five aims will be conducted in parallel.</p>
+  </div>
+</div>
+
+
+
+<div>
+  <h2>Experimentally characterize <i>M. pneumoniae</i></h2>
+  <p>
+    <b class="emph">Serrano Lab</b>, Center for Regulatory Genomics<br/>
+    <b class="emph">St&uuml;lke Lab</b>, University of G&ouml;ttingen
+  </p>
+  
+  <p><i>M. pneumoniae</i> has been extensively characterized including its transcriptome and proteome. However, no species has been completely characterized. We will further characterize <i>M. pneumoniae</i> to enable a more accurate model. First, we will determine the essentiality of every genomic region including every non-genic and small non-coding RNA region. Second, we will characterize the factors responsible for <i>M. pneumoniae</i> virulence.</p>
+  
+  <div class="figure">
+    <img src="{% get_static_prefix %}/img/figures/F1a.jpg" width="35%" />
+    <p class="caption"><b>Mini-transposon assay libraries.</b> Map of pMT85 and pMTnTetM438 vectors and schematic representation of the procedure to obtain the mini-transposon libraries. Cells were grown in liquid culture (two serial passages) after transformation. Then, genomic DNAs were isolated and libraries were prepared for sequencing by HITS. Blue indicates regions of the M. pneumoniae genome, yellow represents transposon insertion sites, and red adaptor sequences.</p>
+  </div>
+</div>
+
+<div>
+  <h2>Construct a whole-cell model of <i>M. pneumoniae</i></h2>
+  <p>
+    <b class="emph">Karr Lab</b>, Icahn School of Medicine at Mount Sinai
+    <br/><b class="emph">Covert Lab</b>, Stanford University
+  </p>
+  
+  <p>Biological systems are composed of many interconnected components. Reliably engineering their collective behavior requires comprehensive and accurate models which represent the function of each individual component. Recently, we and others developed the first whole-cell model of <i>M. genitalium</i> which represented the function of every characterized gene product. However, the accuracy of the model was limited by the little experimental data available for <i>M. genitalium</i>, poor functional characterization of many of its gene products, and little time to curate data and pathways.</p>
+
+  <p>We will adapt our whole-cell model to <i>M. pneumoniae</i>, expand the model to include several additional pathways, and improve the accuracy of the model by rigorously training and validating it with species-specific data collected by the Serrano Lab, including the new essentiality and virulence data. First, we will assemble a database of experimental data to train the model. Second, we will adapt our existing sub-models for <i>M. pneumoniae</i> and add additional sub-models to represent additional pathways. Third, we will integrate the sub-models into a single model using the hybrid modeling approach we developed for our previous model. Fourth, we will use model reduction and numerical optimization to identify the model's parameters. Lastly, we will evaluate the model's accuracy by comparing its predictions to independent experimental data and iteratively refine the model until it is consistent with all training and test data.</p>
+  
+  <div class="figure">
+    <img src="{% get_static_prefix %}/img/figures/Modeling-v1.png" width="50%" />
+    <p class="caption"><b>The whole-cell modeling process.</b> First, we will organize experimental data into a knowledge base (B). Second, we will use this data to construct pathway sub-models. Third, we will integrate the sub-models through common state variables (C). Fourth, we will identify the parameters. Fifth, we will simulate the model, and organize all simulation data into a database (D) to facilitate analysis and visualization (E).</p>
+  </div>
+</div>
+
+<div>
+  <h2>Design a predictable, fast-growing, non-virulent strain</h2>
+  <p>
+    <b class="emph">Karr Lab</b>, Icahn School of Medicine at Mount Sinai
+    <br/><b class="emph">Covert Lab</b>, Stanford University
+  </p>
+  
+  <p>Presently, directed evolution is the best cellular engineering strategy. Cells are mutagenized and a high-throughput assay is used to screen for cells with improved behavior. This strategy is time-consuming and expensive. It requires the development of a high-throughput assay and many rounds of mutagenesis and selection. This strategy is also a local optimization. Consequently, it may not identify global optima which are distant from the starting strain. Furthermore, this strategy does not easily accommodate multiple design objectives such as fast growth and minimal virulence. Separate assays have to be developed for each objective, and the assays must be alternately evaluated.</p> 
+  
+  <p>In contrast, most other engineering fields including mechanical, automotive, and aeronautical engineering use predictive models and computer-aided design tools to design systems rationally without extensive trial and error. We will use the whole-cell model to rationally design a more predictable, faster-growing, and less virulent <i>M. pneumoniae</i> strain. Such a strain would be an ideal chassis for future bioengineering. The predictability would allow the strain to be engineered with minimal experimentation. The fast growth would accelerate strain development and testing and enable the strain to synthesize drugs more quickly. The reduced virulence would enable applications such as targeted drug synthesis and delivery.</p>
+  
+  <p>We will design the strain in three steps. First, we will make the strain more predictable by removing uncharacterized, non-essential components. Second, we will minimize the strain's virulence by minimizing its hydrogen peroxide production. Lastly, we will maximize the strain's growth rate by optimizing its RNA and protein expression. Together, this will create a more predictable, faster-growing, and less virulent strain.</p>
+</div>
+
+<div>
+  <h2>Engineer and execute optimized strains</h2>
+  <p>
+    <b class="emph">Blanchard Lab</b>, National Institute for Agricultural Research
+  </p>
+  
+  <p>Efforts to engineer Mycoplasmas have been limited by the lack of genetic tools. Most existing tools do not work in Mycoplasmas. Targeted gene disruption has only been achieved once with very low efficiency. All genetic modification to date has been achieved by time-intensive random transposon mutagenesis. We will develop a new approach to <i>M. pneumoniae</i> genome engineering which combines in-yeast genome editing and transplantation. We will use this approach to construct the strains designed using the whole-cell model.</p>
+  
+  <div class="figure">
+    <img src="{% get_static_prefix %}/img/figures/Genome engineering.png" width="50%" />
+    <p class="caption"><b><i>M. pneumoniae</i> genomic engineering platform.</b> First, wild type <i>M. pneumoniae</i> will be transformed with a yeast/Mycoplasma integrative vector (red rectangle). Second, newly marked genomes will be isolated and transferred into yeast spheroplasts. After cloning, the large repertoire of yeast genetic tools will be used to modify the incoming genome. Third, the engineered genome will be isolated and transplanted back into suitable recipient cell to generate mutant strains.</p>
+  </div>
+</div>
+
+<div>
+  <h2>Characterize optimized strains</h2>
+  <p>
+    <b class="emph">Serrano Lab</b>, Center for Regulatory Genomics<br/>
+    <b class="emph">St&uuml;lke Lab</b>, University of G&ouml;ttingen
+  </p>
+  
+  <p>This aim will evaluate the performance of the optimized genomes. We will measure the growth and infectivity of the new strains and compare them to that of wild type <i>M. pneumoniae</i>. In addition, we will compare the predicted and observed behavior of the new strains across several experimental conditions to determine how much additional behavioral variation the whole-cell model can explain beyond that of wild type <i>M. pneumoniae</i>.</p>
+</div>
+
+{% endblock %}

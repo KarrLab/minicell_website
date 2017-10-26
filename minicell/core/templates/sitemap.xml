@@ -1,0 +1,41 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- index -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'index' %}</loc>
+    </url>
+    
+    <!-- research -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'research' %}</loc>
+    </url>
+    
+    <!-- education -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'education' %}</loc>
+    </url>
+    
+    <!-- resources -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'resources' %}</loc>
+    </url>
+    
+    <!-- events -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'events' %}</loc>
+    </url>
+    
+    <!-- publications -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'publications' %}</loc>
+    </url>
+    
+    <!-- people -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'people' %}</loc>
+    </url>
+    
+    <!-- contact -->
+    <url>
+        <loc>{{ ROOT_URL }}{% url 'contact' %}</loc>
+    </url>    
+</urlset>

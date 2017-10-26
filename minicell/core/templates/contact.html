@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head_title %}{{ block.super }} | Contact information{% endblock %}
+{% block page_title %}Contact information{% endblock %}
+
+{% block content %}
+<div id="contact">
+  <ul class="small-block-grid-2">
+    <li>
+      <b class="emph">Luis Serrano</b> <a href="mailto:luis.serrano@crg.eu"><i class="fi-mail"></i></a>
+      <br/><i>Project Coordinator</i>
+      <br/>Center for Regulatory Genomics
+    </li>
+
+    <li>
+      <b class="emph">Ruben Ventura</b> <a href="mailto:ruben.ventura@crg.eu"><i class="fi-mail"></i></a>
+      <br/><i>Scientific Project Manager</i>
+      <br/>Center for Regulatory Genomics
+    </li>
+  </ul>
+</div>
+
+{% endblock %}

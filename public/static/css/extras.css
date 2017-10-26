@@ -1,0 +1,214 @@
+body {
+  background: #eee;
+}
+.container {
+  margin-top:30px;
+  margin-bottom:30px;
+  border-top: 20px solid #006b86;
+  border-bottom: 5px solid #006b86;
+  -moz-box-shadow: 0 0 10px #7594b3;
+  -webkit-box-shadow: 0 0 10px #7594b3;
+  box-shadow: 0px 0px 10px #7594b3;
+  background: #fff;
+}
+p, ul , ol, div{font-size:0.9rem; line-height:125%;}
+
+a, a:link, a:visited, a:hover, a:active{
+  color: #0186a8;
+}
+
+h1 {font-size: 1.7rem; font-weight:bold; color: #006b86;}
+h2 {font-size: 1.3rem; color: #0186a8; border-bottom: #0186a8 dotted 1px; margin-top:20px;}
+h3 {font-size: 0.9rem; font-weight:bold; margin-bottom:0px; color: #006b86;}
+
+.emph {color: #006b86;}
+
+h2 .details {color: #006b86;}
+
+p {
+  margin-bottom:10px;
+}
+p.nobottomsep {
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+ul.notopsep {
+  margin-top:0px;
+  padding-top:0px;
+}
+
+p.caption{
+  margin-top:8px;
+  font-size:0.7rem;
+  text-align:left;
+}
+p.caption b{
+  color: #006b86;
+}
+
+.small-block-grid-2, .medium-block-grid-3{
+  margin:0px;
+  padding:0px;
+}
+
+.error {
+  color:red;
+}
+
+/******************
+ * header
+ ******************/
+.header {
+  padding-bottom:0px;
+}
+.header .banner {
+  background: #fff;
+  padding:15px;
+}
+
+.header .nav{
+  list-style-type:none;
+  margin-left:0px;
+  padding-top:6px;
+  padding-bottom:14px;
+  margin-bottom:0px;
+  padding-left:20px;
+  padding-right:20px;
+
+  background: #006b86; /* Old browsers */
+  background: -moz-linear-gradient(top,  #006b86 0%, #7594b3 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006b86), color-stop(100%,#7594b3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #006b86 0%,#7594b3 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #006b86 0%,#7594b3 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #006b86 0%,#7594b3 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #006b86 0%,#7594b3 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006b86', endColorstr='#7594b3',GradientType=0 ); /* IE6-9 */
+}
+.header .nav li {
+  display:inline;
+  margin-right:10px;
+  padding-bottom:4px;
+}
+.header .nav li a {
+  font-weight:bold;
+  color: #fff;
+}
+
+.header .nav li.active {
+  border-bottom: 2px solid #fff;
+}
+.header .nav li.active a {
+  color: #fff;
+}
+
+.subheader {
+  margin-top:0px;
+}
+.subheader div.item {
+  height:250px;
+  width:100%;
+  padding:0px;
+}
+.subheader div.item img{
+  max-height:100%;
+  max-width:100%;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+/******************
+ * footer
+ ******************/
+.bottom-bar {
+  text-align:center;
+  font-size:0.7rem;
+  margin-top:30px;
+  padding-top:5px;
+  padding-bottom:5px;
+  //border-top:#006b86 dotted 1px;
+
+  background: #0186a8;
+  color:white;
+}
+
+/****************
+ * content
+ ****************/
+.content {
+  padding-left:20px;
+  padding-right:20px;
+  margin-top:20px;
+}
+
+/**************
+ Landing page
+***************/
+
+#index .logos {
+  text-align:center;
+  padding:0px;
+  margin:0px;
+  margin-top:30px;
+  margin-bottom:20px;
+}
+#index .logos a{
+  padding-right:15px;
+  padding-left:15px;
+}
+#index .logos a:first-child{
+  padding-left:0px;
+}
+#index .logos a:last-child{
+  padding-right:0px;
+}
+#index .logos a img{
+  height:50px;
+}
+
+/*************
+ * people page
+ *************/
+#people .group .info{
+  padding-bottom:20px;
+}
+#people .group .info p{
+  margin:0px;
+  margin-bottom:10px;
+}
+#people .group img{
+  padding-right:10px;
+}
+#people .group li a {
+  color:#006b86;
+  font-style:italic;
+}
+
+/*************
+ * contact page
+ *************/
+#contact li{
+  padding-left:0px;
+}
+#contact a{
+  color: #006b86;
+}
+
+/**********
+ * carousel
+ *********/
+
+.owl-carousel {
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.owl-carousel .owl-wrapper {
+  border-top:1px solid #0186a8;
+  border-bottom:1px solid #0186a8;
+  background: #efefef;
+}
+.owl-theme .owl-controls .owl-page span {
+  background-color:#0186a8;
+}
